@@ -7,3 +7,13 @@ def fact(n):
     return k
 
 print(fact(5))
+
+
+def fact_via_recursion(n):
+    if n == 1:
+        return 1
+    else:
+        return n * fact_via_recursion(n - 1)
+
+
+print(fact_via_recursion(5))
